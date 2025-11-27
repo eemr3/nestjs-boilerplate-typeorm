@@ -13,11 +13,27 @@ Boilerplate profissional para iniciar projetos com NestJS + TypeORM.
 
 ## 📁 Estrutura organizada
 
-- src/modules/
-- src/shared
-- src/core
-- src/config
-- migrations/
+```
+src/
+├── config/              # Configurações da aplicação
+├── database/            # Configuração do banco de dados
+│   ├── data-source.ts
+│   └── migrations/      # Migrations do TypeORM
+├── modules/             # Módulos da aplicação
+│   └── user/           # Exemplo de módulo (Clean Architecture)
+│       ├── application/ # Casos de uso e serviços
+│       ├── domain/      # Entidades, value objects e exceções
+│       ├── infrastructure/ # Implementações (repositórios, etc)
+│       ├── presentation/   # Controllers e DTOs
+│       └── user.module.ts
+└── shared/             # Recursos compartilhados
+    ├── decorators/
+    ├── dto/
+    ├── filters/
+    ├── guards/
+    ├── interceptors/
+    └── pipes/
+```
 
 ## ▶ Utilizando este boilerplate
 
