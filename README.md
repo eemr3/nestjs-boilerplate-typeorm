@@ -13,11 +13,11 @@ Boilerplate profissional para iniciar projetos com NestJS + TypeORM.
 
 ## 📁 Estrutura organizada
 
-src/modules/
-src/shared
-src/core
-src/config
-migrations/
+- src/modules/
+- src/shared
+- src/core
+- src/config
+- migrations/
 
 ## ▶ Utilizando este boilerplate
 
