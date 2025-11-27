@@ -4,7 +4,7 @@ Boilerplate profissional para iniciar projetos com NestJS + TypeORM.
 
 ## 🚀 Tecnologias inclusas
 
-- NestJS 10
+- NestJS 11x
 - TypeORM 0.3
 - PostgreSQL
 - JWT Auth
@@ -13,19 +13,26 @@ Boilerplate profissional para iniciar projetos com NestJS + TypeORM.
 
 ## 📁 Estrutura organizada
 
-src/modules/\*
+src/modules/
 src/shared
 src/core
 src/config
 migrations/
 
-## ▶ Rodando o projeto
+## ▶ Utilizando este boilerplate
 
 ```bash
+npx degit eemr3/nestjs-boilerplate meu-novo-projeto
+cd meu-novo-projeto
+
 cp .env.example .env
 npm install
 npm run start:dev
+```
 
+## ▶ Para rodar as migrations
+
+```bash
 npm run migration:generate --name=init
 npm run migration:run
 ```
