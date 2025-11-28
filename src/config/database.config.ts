@@ -12,5 +12,4 @@ export const getDatabaseConfig = (): TypeOrmModuleOptions &
   entities: [__dirname + '/../**/*.entity{.ts,.js}'],
   migrations: [__dirname + '/../database/migrations/*{.ts,.js}'],
   synchronize: false,
-  logging: process.env.NODE_ENV === 'development',
 });

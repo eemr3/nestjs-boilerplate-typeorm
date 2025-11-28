@@ -1,2 +1,3 @@
-export { default as appConfig } from './app.config';
+export { default as configuration } from './configuration';
 export { getDatabaseConfig } from './database.config';
+export { setupSwagger } from './swagger.config';
